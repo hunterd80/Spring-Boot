@@ -18,7 +18,9 @@ public class FirstController {
 
     @GetMapping("/bye")
     public String seeYouNext(Model model){
+
         model.addAttribute("nickname", "walker");
+
         return "goodbye";
     }
 }
